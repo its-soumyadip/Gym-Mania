@@ -1,13 +1,209 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap');
+body{
+    background-color: black;
+    overflow-x: hidden;
+    font-family: 'Geologica', sans-serif;
+}
+.carousel-item{
+    height: 590px;
+    overflow: hidden;
+}
+.gallery-container {
+    position: relative;
+  }
+  
+  .navbar {
+    font-weight: bolder;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* Adjust the height as needed */
+    z-index: 1; /* Ensure the navbar appears above the images */
+    background: transparent; /* Make the navbar background transparent */
+  }
+  
+  .image-gallery {
+    background-size: cover;
+    background-position: center;
+  }
+  .heading{
+    font-size: 32px;
+    margin-top: 7rem;
+    font-weight: bolder;
+    color: white;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  .heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; /* Set the desired height for vertical centering */
+  }
+  
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.back-img{
+    background-image: url("https://img.freepik.com/free-photo/crop-serious-sportswoman-with-dumbbell_23-2147752858.jpg?w=1380&t=st=1685652509~exp=1685653109~hmac=1c4a2e156442b863f00960d08736e1acb87fa5966628da4a5a3fb959fffc71e7");
+    background-size: cover;
+    overflow: hidden;
+}
+.contact{
+    margin-top: 8rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-heading{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
 }
+  
+.social-icons img{
+    width: 25px;
+    margin: 8px;
+}
+ul.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.social-icons a{
+    text-decoration: none;
+    color: white;
+}
+textarea{
+    resize: none;
+}
+.carousel-caption p,h5{
+  font-weight: bolder;
+}
+.carousel-caption h5{
+  font-size: 2rem;
+}
+.carousel-caption p{
+  font-size: 1.5rem;
+}
+
+
+.btn-black{
+
+font-family: Roboto, sans-serif;
+font-weight: 700;
+font-size: 14px;
+color: #fff;
+background: linear-gradient(90deg, #d62828 0%, #9c0091 100%);
+padding: 10px 30px;
+border: none;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 703ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-align: center;
+}
+
+.btn-black:hover{
+
+transition : 703ms;
+padding: 10px 36px;
+transform : translateY(-8px);
+background: linear-gradient(90deg, #d62828 0%, #9c0091 100%);
+color: #f7f7f7;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title{
+  font-size: 1rem;
+}
+
+
+.zoom-image {
+  overflow: hidden;
+}
+
+.zoom-image img {
+  transition: transform 0.7s ease;
+}
+
+.zoom-image:hover img {
+  transform: scale(1.2);
+}
+
+.card-title{
+  background-color: rgb(21, 13, 13);
+  color: white;
+  padding: .9rem;
+  border-top: 1px solid white;
+}
+.card-body{
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+.nav-item{
+  font-size: 16px;
+}
+.dots {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: white;
+  border-radius: 100px;
+  position:relative;
+  margin: 12px 8px;
+}
+.dots-wrapper {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: -10px;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.form-control:focus {
+  border-color: #FF0000; /* Replace with your desired border color */
+  box-shadow: none; /* Optional: Remove the box shadow if desired */
+  outline: 0; /* Optional: Remove the outline if desired */
+}
+.carousel-control-prev, .carousel-control-next{
+  margin-top: 3rem;
+}
+
+.contact-us-heading {
+  background: linear-gradient(45deg, #FFC107, #FF4081);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+
+
+
